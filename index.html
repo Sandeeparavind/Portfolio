@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sandeep Website</title>
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,100&family=Rubik+Pixels&family=Sacramento&display=swap" rel="stylesheet">
-</head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep Mangadu Aravind | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 <body>
-    <div>
-     <img class="top-cloud" src="cloud.png" alt="cloud-img">
-     <h1>I'm Sandeep!</h1>
-     <!-- <p>A <span class = "dev">dev</span>eloper.</p>  -->
-     <p class="p">A Developer.</p>
-     <img class = "bottom-cloud" src="cloud.png" alt="cloud-img">
-     <img src="mountain.png" alt="mountain-img">
-    </div>
-    <!-- <div class = "demo1"></div>
-    <div class = "demo2"></div> -->
-    <div class="middle-container">
-        <div class="profile">
-            <img class = "dp" src="Sandy_webpage_pic.jpg" alt = "Sandeep picture">
-          <h2>Hey!</h2>
-        </div>
-        <hr>
-        <div class="skills">
-          <h2>Skills : </h2>
-          <div class="skill-row">
-            <img class="comp" src="computer.png" alt="">
-            <h3>Coding and Query Languages : </h3>
-            
-               <p class="code">JavaScript, Python, C#, Java, C++, Cypher Query, SQL</p> 
-                
-                <h3>Frameworks : </h3>
-                <p class="framework">.NET, ASP.NET Core, Bootstrap, AngularJS</p>
-                
-          </div>
-            <div class="skill-row3">
-            <!-- <img class="" src="" alt=""> -->
-            <h2>Personal Project</h2>
-            <p>Have created a Recipe book in AngularJS. Can create a Login ID with SignUP option. Please check it out!</p>
-            <a class="footer-link" href="https://ng-course-recipe-book-1196c.web.app/">Recipe Book Link</a>
-                <a href="documentation.html">User-Guide</a>
-          </div>
-          <div class="skill-row2">
-            <!-- <img class="" src="" alt=""> -->
-            <h2>Work Experience</h2>
-            <p>
-                <strong>Software Developer</strong> at <em>Schneider Electric</em> &mdash; 2 years of full-time experience.
-                <br>
-                <strong>Software Engineering Intern</strong> at <em>Kingship AI, Inc.</em>, San Jose &mdash; recent internship focused on building scalable AI-integrated systems.
-                <br>
-                <strong>Data Science Internships</strong>: 
-                <ul>
-                    <li>Technosoft Corporation; Summer 2019</li>
-                    <li>PayPal; Summer 2018</li>
-                </ul>
-            </p>
 
-<!--             <img class="book" src="BookImage.png" alt=""> -->
-              <h2>Education</h2>
-              <p>Master's in Information Technology and Management at Illinois Institute of Technology.  May 2026</p>
-              <p>Bachelor of Technology in Electronics and Communication Engineering at Sastra University.  July 2020</p>
-          </div>
-        </div>
-        <hr>
-        <div class="low">
-          <!-- <a class="btn" href="mailto:sandeeparavind98@email.com">CONTACT ME</a> -->
-          <!-- <h2>Get In Touch</h2> -->
-          <h4>If you love Real Madrid, then do hit me up!</h4>
-        </div>
-        
-        <!-- <div class="contact-me"></div>
-          <h2>Get In Touch</h2>
-          <h4>If you love Real Madrid, then do click on either of the below links.</h4>
-          <a class="btn" href="mailto:sandeeparavind98@email.com">CONTACT ME</a>
-        </div> -->
-      </div>
-      
-      
-      <div class="bottom-container">
-        <a class="btn" href="mailto:sandeeparavind98@gmail.com">CONTACT ME</a>
-        <a class="btn" href="https://www.linkedin.com/in/sandeeparavind">LinkedIn</a>
-        <p>©2023 Sandeep Mangadu Aravind</p>
-      </div>
-      
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Sandeep</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="section hero">
+    <h1>Hi, I'm <span>Sandeep</span></h1>
+    <p>Software Developer | Tech Enthusiast | Real Madrid Fan</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><strong>Languages:</strong> JavaScript, Python, C#, Java, C++, SQL, Cypher</div>
+      <div><strong>Frameworks:</strong> .NET Core, AngularJS, ReactJS, FastAPI</div>
+      <div><strong>Databases:</strong> SQL, PostgreSQL, Neo4j, Cloud Computing</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Recipe Book (AngularJS)</h3>
+      <p>Login and signup-enabled web app to manage recipes.</p>
+      <a href="https://ng-course-recipe-book-1196c.web.app/" target="_blank">View Project</a> |
+      <a href="documentation.html" target="_blank">User Guide</a>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Software Engineering Intern</strong> at <em>Kingship AI, Inc.</em>, San Jose (Summer 2025)</li>
+      <li><strong>Software Developer</strong> at <em>Schneider Electric</em> – 2 years</li>
+      <li><strong>Data Science Intern</strong> at Technosoft Corporation (Summer 2019)</li>
+      <li><strong>Data Science Intern</strong> at PayPal (Summer 2018)</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <p><strong>M.S.</strong> in Information Technology & Management<br>Illinois Tech — Dec 2025</p>
+    <p><strong>B.Tech</strong> in Electronics and Communication<br>Sastra University — July 2020</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Let's Connect</h2>
+    <p>If you love Real Madrid or just want to collaborate — reach out!</p>
+    <div class="contact-buttons">
+      <a href="mailto:sandeeparavind98@gmail.com" class="btn">Email Me</a>
+      <a href="https://www.linkedin.com/in/sandeeparavind" target="_blank" class="btn">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sandeep Mangadu Aravind</p>
+  </footer>
+
 </body>
 </html>
