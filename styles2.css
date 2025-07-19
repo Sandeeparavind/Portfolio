@@ -147,7 +147,6 @@ nav {
   margin: 0 5px;
   position: relative;
   font-size: var(--fz-xs);
-  counter-increment: item 1;
 }
 
 .nav-links a {
@@ -161,12 +160,6 @@ nav {
   color: var(--green);
 }
 
-.nav-links a::before {
-  content: '0' counter(item) '.';
-  margin-right: 5px;
-  color: var(--green);
-  font-size: var(--fz-xs);
-}
 
 .btn-resume {
   color: var(--green);
