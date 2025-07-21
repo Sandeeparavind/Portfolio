@@ -47,6 +47,16 @@ document.addEventListener('DOMContentLoaded', function () {
         reset: false
     });
 
+    // --- Project Card Scroll Reset ---
+    const projectCards = document.querySelectorAll('.project-card-new');
+
+    projectCards.forEach(card => {
+        card.addEventListener('mouseleave', () => {
+            // When the mouse leaves, scroll the card back to the top
+            card.scrollTop = 0;
+        });
+    });
+
     // Animate sections
     sr.reveal('section', { interval: 100 });
 
