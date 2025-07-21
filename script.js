@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // --- Scroll Reveal Animations ---
-    // You can find the CDN link in the HTML file
     const sr = ScrollReveal({
         origin: 'bottom',
         distance: '20px',
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     projectCards.forEach(card => {
         card.addEventListener('mouseleave', () => {
-            // When the mouse leaves, scroll the card back to the top
             card.scrollTop = 0;
         });
     });

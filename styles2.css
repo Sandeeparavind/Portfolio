@@ -93,7 +93,7 @@ h3 {
   background-color: var(--green-tint);
 }
 
-/* --- HEADER / NAVBAR --- */
+/* --- NAVBAR --- */
 header {
   display: flex;
   justify-content: space-between;
@@ -368,7 +368,6 @@ nav {
   position: relative;
   border-radius: var(--border-radius);
   width: 100%;
-  /* Grayscale filter has been removed */
 }
 
 /* --- SKILLS SECTION --- */
