@@ -33,8 +33,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--navy);
+    background-color: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--lightest-navy);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .back-link {
@@ -43,6 +47,7 @@ body {
     text-decoration: none;
     transition: var(--transition);
 }
+
 .back-link:hover {
     color: var(--white);
 }
@@ -58,85 +63,176 @@ body {
     text-decoration: none;
     transition: var(--transition);
 }
+
 .btn-download:hover {
     background-color: rgba(100, 255, 218, 0.1);
 }
 
 /* --- RESUME CONTAINER & HEADER --- */
 .resume-container {
-    max-width: 850px;
+    max-width: 950px;
     margin: 40px auto;
     padding: 2rem;
 }
 
 .resume-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
+
 .resume-header h1 {
     color: var(--lightest-slate);
     font-size: clamp(32px, 5vw, 42px);
-    margin: 0;
+    margin: 0 0 30px 0;
+    /* Added margin to separate from cards */
 }
-.resume-header p {
+
+.contact-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contact-info-card {
+    background-color: var(--navy);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    /* This makes the card a clean link */
+    flex: 1;
+    min-width: 160px;
+    transition: var(--transition);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    background-color: var(--light-navy);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--dark-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+}
+
+.card-icon i {
+    font-size: 1.25rem;
     color: var(--green);
-    font-family: var(--font-mono);
-    font-size: 18px;
-    margin: 5px 0 15px 0;
 }
-.contact-info {
-    font-size: 14px;
+
+.contact-info-card h3 {
+    color: var(--lightest-slate);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.contact-info-card p {
+    font-family: var(--font-mono);
+    font-size: 13px;
     color: var(--slate);
+    word-break: break-word;
+    margin: 0;
+    transition: var(--transition);
+}
+
+.contact-info-card:hover p {
+    color: var(--green);
+    /* Text color changes when hovering the card */
 }
 
 /* --- RESUME SECTIONS --- */
 .resume-section {
     margin-bottom: 40px;
 }
+
+.summary-text {
+    font-size: 18px;
+    color: var(--light-slate);
+    text-align: justify;
+}
+
 .section-title {
     font-size: 22px;
+    font-weight: 600;
     color: var(--lightest-slate);
     border-bottom: 1px solid var(--lightest-navy);
     padding-bottom: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.job, .education-item {
-    margin-bottom: 20px;
+.job,
+.education-item {
+    margin-bottom: 25px;
+    padding: 1.5rem;
+    background-color: var(--navy);
+    border-radius: 4px;
 }
-.job h3, .education-item h3 {
+
+.job-header,
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.job-header h3,
+.education-item h3 {
     font-size: 18px;
     color: var(--light-slate);
     margin: 0;
 }
-.company-info, .education-item p {
+
+.job-header span,
+.education-header span {
     font-family: var(--font-mono);
-    font-size: 14px;
+    font-size: 13px;
     color: var(--slate);
-    margin: 3px 0 10px 0;
 }
+
+.company-info,
+.school-info {
+    font-family: var(--font-sans);
+    font-size: 16px;
+    color: var(--light-slate);
+    margin: 0 0 10px 0;
+    font-style: italic;
+}
+
 ul {
     padding-left: 20px;
     margin: 0;
 }
+
 ul li {
     margin-bottom: 8px;
 }
+
 ul li::marker {
     color: var(--green);
 }
 
-/* --- SKILLS LIST --- */
-.skills-list {
+/* New style for the tags under Education and Work Experience */
+.item-skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 15px;
 }
-.skills-list span {
-    background-color: var(--light-navy);
+
+.item-skills-list span {
+    background-color: var(--lightest-navy);
     color: var(--light-slate);
     padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 14px;
+    border-radius: 4px;
+    font-size: 13px;
     font-family: var(--font-mono);
 }

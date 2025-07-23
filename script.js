@@ -59,3 +59,19 @@ document.addEventListener('DOMContentLoaded', function () {
     sr.reveal('section', { interval: 100 });
 
 });
+
+// --- Mobile Menu ---
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinksContainer = document.querySelector('.nav-links-container');
+const navLinks = document.querySelectorAll('.nav-links li a');
+
+hamburgerMenu.addEventListener('click', () => {
+    navLinksContainer.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinksContainer.classList.remove('active');
+    });
+});
