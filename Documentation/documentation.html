@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>User Guide | Recipe Book Application</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="guide-style.css">
+    
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Portfolio</a>
+
+    <div class="container">
+        <h1>Recipe Management Application</h1>
+        
+        <p class="intro">
+            This is a CRUD application developed with JWT authentication, enabling users to create, read, update, and delete recipes. The application features a user-friendly UI for an interactive recipe menu and utilizes the FIREBASE framework for its backend and database management.
+        </p>
+
+        <section>
+            <h2>Application Functionality</h2>
+            <ul>
+                <li>Post-authentication, users can view, add, delete, and edit recipes.</li>
+                <li>Recipe parameters include name, image URL, description, and ingredients.</li>
+                <li>An integrated shopping list allows users to add and manage ingredients from recipes.</li>
+                <li>JWT implementation ensures users are automatically logged in upon returning to the app.</li>
+                <li>For security, the session token expires and logs the user out after one hour.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sign-up Rules</h2>
+            <ul>
+                <li>The email address must be a valid format (e.g., containing '@' and a domain).</li>
+                <li>The password must be at least 6 characters long.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Test Login Credentials</h2>
+            <div class="credentials-box">
+                <p>To test the application without creating a new user, please use the following credentials:</p>
+                <p>Email: <code>test@test.com</code></p>
+                <p>Password: <code>test123</code></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Data Management</h2>
+            <p>To access and manipulate recipe data:</p>
+            <ul>
+                <li>In the navigation bar, select "Manage" &rarr; "Fetch Data" to load recipes from the database.</li>
+                <li>Perform any desired actions (view, add, delete, or edit recipes).</li>
+                <li>To commit your changes permanently, select "Manage" &rarr; "Save Data".</li>
+                <li>Always logout of the application when your session is complete.</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
